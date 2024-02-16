@@ -1,12 +1,12 @@
 import Body from "./Components/Body";
 import { useState } from "react";
 import Header from "./Components/Header";
-interface Prop {
-  counts: number;
-  handleClick: () => void;
-  handleDec: () => void;
-  handleCart: () => void;
-}
+// interface Prop {
+//   counts: number;
+//   handleClick: () => void;
+//   handleDec: () => void;
+//   handleCart: () => void;
+// }
 
 function App() {
   const [count, setcount] = useState(0);
