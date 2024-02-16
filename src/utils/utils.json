@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "foodName": "Mutton Biriyani",
+    "foodImage": "https://miro.medium.com/v2/resize:fit:578/1*cDZdB_kwHJHGt_eA9qLoaw.png",
+    "foodPrice": 160,
+
+    "time": "36 min",
+    "star": 4.3,
+    "rating": 1000,
+    "discount-Availability": "Hot seller",
+
+    "delievery": "Rs.30"
+  },
+  {
+    "id": 2,
+    "foodName": "Parotta",
+    "foodImage": "https://c.ndtvimg.com/2021-05/tj7sdqj8_parotta_625x300_14_May_21.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350?im=FaceCrop,algorithm=dnn,width=1200,height=886",
+    "foodPrice": 30,
+
+    "discount-Availability": null,
+    "time": "40 min",
+    "star": 4.1,
+    "rating": 500,
+    "delievery": "Free delievery"
+  },
+  {
+    "id": 3,
+    "foodName": "Chappathi",
+    "foodImage": "https://thumbs.dreamstime.com/b/chapati-indian-flat-bread-dal-chana-masala-healthy-vegetarian-popular-food-eaten-breakfast-lunch-dinner-as-119230519.jpg",
+    "foodPrice": 30,
+
+    "delievery": "Free delievery",
+    "time": "30 min",
+    "star": 3.7,
+    "rating": 200,
+    "discount-Availability": "Hot seller"
+  },
+  {
+    "id": 4,
+    "foodName": "Chicken Biriyani",
+    "foodImage": "https://recipes.net/wp-content/uploads/2023/05/air-fryer-chicken-biryani-recipe_6968eb6ab4a5ae22d136dab86c9ea8af.jpeg",
+    "foodPrice": 160,
+
+    "discount-Availability": null,
+    "delievery": " Rs.30",
+    "time": "60 min",
+    "star": 4.2,
+    "rating": 900
+  },
+  {
+    "id": 5,
+    "foodName": " Donne Biriyani",
+    "foodImage": "https://www.fmlive.in/wp-content/uploads/2020/09/Donne-biryani.jpg",
+    "foodPrice": 160,
+
+    "delievery": "Rs.60",
+    "time": "40 min",
+    "star": 3.9,
+    "rating": 600,
+    "discount-Availability": "Hot seller"
+  },
+  {
+    "id": 6,
+    "foodName": "Fish Biriyani",
+    "foodImage": "https://www.mirchitales.com/wp-content/uploads/2020/12/Fish-Biryani-8-1024x683.jpg",
+    "foodPrice": 160,
+
+    "time": "30 min",
+    "star": 4.5,
+    "rating": 900,
+    "discount-Availability": null,
+    "delievery": "Rs.60"
+  },
+  {
+    "id": 7,
+    "foodName": "Prawn Biriyani",
+    "foodImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSYQUErTc7XO4mRN9LC06OciNaPy5oZvgCg&usqp=CAU",
+    "foodPrice": 160,
+
+    "delievery": "Rs.60",
+    "time": "20 min",
+    "star": 4.7,
+    "rating": 1000,
+    "discount-Availability": null
+  },
+  {
+    "id": 8,
+    "foodName": "Dosai",
+    "foodImage": "https://inemai.com/wp-content/uploads/2019/02/Dosai.png",
+    "foodPrice": 30,
+
+    "discount-Availability": null,
+    "time": "25 min",
+    "star": 4.2,
+    "rating": 600,
+    "delievery": "Free delievery"
+  },
+  {
+    "id": 9,
+    "foodName": "Idle",
+    "foodImage": "https://assets.cntraveller.in/photos/627a4112cbc04ca509426501/3:2/w_3300,h_2200,c_limit/Vegetarian%20South%20Indian%20breakfast%20thali%20-%20Idli%20vada%20sambar%20chutney%20-%20Image%20ID%202H3783R%20(RF).jpg",
+    "foodPrice": 50,
+
+    "discount-Availability": "Hot seller",
+    "time": "35 min",
+    "star": 3.6,
+    "rating": 400,
+    "delievery": "Free delievery"
+  },
+  {
+    "id": 10,
+    "foodName": "Aapam",
+    "foodImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMSIR-oSbVynpw4QM7oZzZyitk9aAnxCJmTw&usqp=CAU",
+    "foodPrice": 30,
+
+    "discount-Availability": null,
+    "time": "30 min",
+    "star": 4.0,
+    "rating": 800,
+    "delievery": "Rs.20"
+  },
+  {
+    "id": 11,
+    "foodName": "Fresh Apple Juice",
+    "foodImage": "https://cdn2.foodviva.com/static-content/food-images/juice-recipes/green-apple-juice-recipe/green-apple-juice-recipe.jpg",
+    "foodPrice": 70,
+
+    "delievery": "Free delievery",
+    "time": "20 min",
+    "star": 3.5,
+    "rating": 250,
+    "discount-Availability": "Hot seller"
+  },
+  {
+    "id": 12,
+    "foodName": "Fresh Mango Juice",
+    "foodImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT4YDFXLAU90HmuwTj1IHv65OgA1f_5DG-HL8WbaKx-DJeNcdEjDfW2yZlWfqAO0cCc2Q&usqp=CAU",
+    "foodPrice": 120,
+
+    "delievery": "Rs.30",
+    "time": "15 min",
+    "star": 3.2,
+    "rating": 700,
+    "discount-Availability": "Hot seller"
+  },
+  {
+    "id": 13,
+    "foodName": "Pineapple Shake",
+    "foodImage": "https://simplyblendedsmoothies.com/wp-content/uploads/2020/05/Pineapple-Milkshake-07714-720x720.jpg",
+    "foodPrice": 130,
+
+    "discount-Availability": null,
+    "delievery": "Rs.30",
+    "time": "20 min",
+    "star": 4.7,
+    "rating": 100
+  },
+  {
+    "id": 14,
+    "foodName": "Watermelon Juice",
+    "foodImage": "https://bellyfull.net/wp-content/uploads/2022/06/Watermelon-Juice-blog-4.jpg",
+    "foodPrice": 130,
+
+    "discount-Availability": null,
+    "delievery": "Free delievery",
+    "time": "40 min",
+    "star": 3.8,
+    "rating": 300
+  },
+  {
+    "id": 15,
+    "foodName": "Fresh Orange Juice",
+    "foodImage": "https://www.healthifyme.com/blog/wp-content/uploads/2022/01/cropped-Orange-Juice-1-1.jpg",
+    "foodPrice": 160,
+
+    "discount-Availability": null,
+    "delievery": "Rs.30",
+    "time": "30 min",
+    "star": 3.7,
+    "rating": 200
+  }
+]
