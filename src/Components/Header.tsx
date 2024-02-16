@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({ counts, handleCart }) => {
               width="2em"
               height="2em"
               viewBox="0 0 24 24"
-              className="text-white cursor-pointer hover:text-gray-600"
+              className="text-white cursor-pointer hover:text-gray-400"
             >
               <path
                 fill="currentColor"
