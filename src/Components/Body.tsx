@@ -3,16 +3,6 @@ import SideBar from "./SideBar";
 import { useState } from "react";
 import { useGlobalContent } from "./GlobalContent";
 
-// interface BodyProps {
-//   handleClick: () => void;
-//   handleDec: () => void;
-//   menu: boolean;
-// }
-// interface SidebarProps {
-//   handleInc: () => void;
-//   handleDec: () => void;
-// }
-
 export interface JsonData {
   id: number;
   foodName: string;
@@ -162,11 +152,7 @@ const Body: React.FC = () => {
       </div>
       <div className={cartClose ? "hidden" : "pt-10 bg-[#723d46] w-[350px]"}>
         <h2 className="text-white font-bold text-xl mb-4 ">Cart Items</h2>
-        <SideBar
-          handleInc={handleIncrement}
-          handleDec={handleDecrement}
-          selectedItems={selectedItems}
-        />
+        <SideBar selectedItems={selectedItems} />
       </div>
     </div>
   );

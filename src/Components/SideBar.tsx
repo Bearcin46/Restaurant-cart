@@ -1,29 +1,25 @@
 import React, { useState } from "react";
 import { JsonData } from "./Body";
+import { useGlobalContent } from "./GlobalContent";
 
 interface sidebarprops {
-  handleInc: () => void;
-  handleDec: () => void;
   selectedItems: Array<JsonData>;
 }
 
-const SideBar: React.FC<sidebarprops> = ({
-  handleInc,
-  handleDec,
-  selectedItems,
-}) => {
+const SideBar: React.FC<sidebarprops> = ({ selectedItems }) => {
+  const { handleIncrement, handleDecrement } = useGlobalContent();
   const [itemQuantity, setItemQuantity] = useState(1);
 
   const handleIncrease = () => {
     setItemQuantity(itemQuantity + 1);
-    handleInc();
+    handleIncrement();
   };
   const handleDecrease = () => {
     setItemQuantity(itemQuantity - 1);
     if (itemQuantity <= 0) {
       setItemQuantity(0);
     }
-    handleDec();
+    handleDecrement();
   };
 
   return (
