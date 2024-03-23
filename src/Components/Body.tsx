@@ -150,9 +150,17 @@ const Body: React.FC = () => {
       >
         {menuItems}
       </div>
-      <div className={cartClose ? "hidden" : "pt-10 bg-[#723d46] w-[350px]"}>
+      <div
+        className={
+          cartClose ? "hidden" : "pt-10 bg-[#723d46] w-[350px] h-screen"
+        }
+      >
         <h2 className="text-white font-bold text-xl mb-4 ">Cart Items</h2>
         <SideBar selectedItems={selectedItems} />
+        <div className="bg-white ml-1 absolute bottom-0 flex px-5 py-3 items-center justify-between w-[335px] rounded-sm">
+          <h1 className="font-bold">TOTAL</h1>
+          <h1 className="font-bold">0</h1>
+        </div>
       </div>
     </div>
   );
