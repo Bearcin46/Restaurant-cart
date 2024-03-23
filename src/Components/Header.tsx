@@ -1,8 +1,10 @@
-interface HeaderProps {
-  counts: number;
-  handleCart: () => void;
-}
-const Header: React.FC<HeaderProps> = ({ counts, handleCart }) => {
+import { useGlobalContent } from "./GlobalContent";
+// interface HeaderProps {
+//   counts: number;
+//   handleCart: () => void;
+// }
+const Header: React.FC = () => {
+  const { count, cartOpen } = useGlobalContent();
   return (
     <div className="flex items-center justify-between px-6 md:px-10 py-3 bg-[#723d46]">
       <div className="flex gap-2 text-white items-center">
@@ -20,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ counts, handleCart }) => {
         <h1 className="text-xl font-serif font-semibold">Anbu Unavagam</h1>
       </div>
       <div className="flex">
-        <div onClick={handleCart} className="cursor-pointer">
+        <div onClick={cartOpen} className="cursor-pointer">
           <div className="text-white relative right-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +38,7 @@ const Header: React.FC<HeaderProps> = ({ counts, handleCart }) => {
           </div>
           <div className="absolute top-0 ">
             <span className="bg-white rounded-full px-1  text-xs  text-[#723d46]">
-              {counts}
+              {count}
             </span>
           </div>
         </div>

@@ -1,12 +1,13 @@
 import resData from "../utils/utils.json";
 import SideBar from "./SideBar";
 import { useState } from "react";
+import { useGlobalContent } from "./GlobalContent";
 
-interface BodyProps {
-  handleClick: () => void;
-  handleDec: () => void;
-  menu: boolean;
-}
+// interface BodyProps {
+//   handleClick: () => void;
+//   handleDec: () => void;
+//   menu: boolean;
+// }
 // interface SidebarProps {
 //   handleInc: () => void;
 //   handleDec: () => void;
@@ -24,7 +25,8 @@ export interface JsonData {
   delievery: string;
 }
 
-const Body: React.FC<BodyProps> = ({ handleClick, menu, handleDec }) => {
+const Body: React.FC = () => {
+  const { handleIncrement, handleDecrement, cartClose } = useGlobalContent();
   const [selectedItems, setSelectedItems] = useState<Array<JsonData>>([]);
 
   const handleCart = (item: JsonData) => {
@@ -127,7 +129,7 @@ const Body: React.FC<BodyProps> = ({ handleClick, menu, handleDec }) => {
             height="1.5em"
             viewBox="0 0 24 24"
             onClick={() => {
-              handleClick(), handleCart(items);
+              handleIncrement(), handleCart(items);
             }}
           >
             <path
@@ -151,18 +153,18 @@ const Body: React.FC<BodyProps> = ({ handleClick, menu, handleDec }) => {
       {/* //=============================================body======================== */}
       <div
         className={
-          menu
-            ? "md:grid-cols-4 grid gap-3 gap-y-10 mb-10 place-items-center pt-16 px-5"
-            : "grid md:grid-cols-5 grid-cols-1 gap-3 gap-y-10 mb-10 place-items-center pt-16 px-5"
+          cartClose
+            ? "grid md:grid-cols-5 grid-cols-1 gap-3 gap-y-10 mb-10 place-items-center pt-16 px-5"
+            : "md:grid-cols-4 grid gap-3 gap-y-10 mb-10 place-items-center pt-16 px-5"
         }
       >
         {menuItems}
       </div>
-      <div className={menu ? "pt-10 bg-[#723d46] w-[350px]" : "hidden"}>
+      <div className={cartClose ? "hidden" : "pt-10 bg-[#723d46] w-[350px]"}>
         <h2 className="text-white font-bold text-xl mb-4 ">Cart Items</h2>
         <SideBar
-          handleInc={handleClick}
-          handleDec={handleDec}
+          handleInc={handleIncrement}
+          handleDec={handleDecrement}
           selectedItems={selectedItems}
         />
       </div>
